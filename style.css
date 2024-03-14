@@ -1,0 +1,200 @@
+/* style.css */
+
+/* Reset default browser styles */
+body, h1, h2, ul, li, a, input, button {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+background-color: #f2f2f2;
+}
+
+/* Header styles */
+.Head {
+background-color: #333;
+color: #fff;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed; /* Set the position to fixed */
+top: 0; /* Position it at the top of the viewport */
+left: 0; /* Position it at the left of the viewport */
+width: 100%; /* Make it full-width */
+z-index: 1000; /* Ensure it appears above other content */
+}  
+
+.Head h1 {
+font-size: 24px;
+}
+
+.Search {
+display: flex;
+align-items: center;
+}
+
+.Search img {
+width: 30px;
+}
+
+.Search input {
+padding: 8px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-left: 8px;
+}
+
+.Login{
+    margin-right: 45px ;
+}
+
+.Login a {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #fff;
+}
+
+.Login img {
+width: 40px;
+height: 40px;
+margin-right: 8px;
+}
+
+.Login button {
+padding: 8px 16px;
+border-radius: 4px;
+background-color: #fff;
+color: #333;
+border: none;
+cursor: pointer;
+}
+
+/* Main container styles */
+.MainContainer {
+display: flex;
+justify-content: space-between;
+margin: 20px;
+}
+
+/* List Sections styles */
+.List_Sections {
+    margin-top: 70px;
+flex-basis: 30%;
+margin-right: 20px;
+animation: slideIn 1s ease-in-out;
+border: #333;
+border-width: 2px;
+}
+
+.List_Sections h2 {
+font-size: 20px;
+margin-bottom: 10px;
+animation: fadeIn 1s ease-in-out;
+}
+
+.List_Sections ul {
+list-style-type: none;
+}
+
+.List_Sections li{
+padding-left: 15px;
+}
+
+.List_Sections li {
+    margin-bottom: 10px;
+transition: transform 0.3s ease; 
+}
+
+.List_Sections li:hover {
+transform: scale(1.1); 
+}
+
+.List_Sections li:active {
+transform: scale(1.2); 
+}
+
+.List_Sections a {
+text-decoration: none;
+color: #333;
+}
+
+/* Books styles */
+.Books {
+position: relative;
+right: 40px;
+flex-basis: 70%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 70px;
+}
+
+.Books h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.Book {
+flex-basis: calc(40% - 20px);
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #fff;
+padding: 20px;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+margin-bottom: 20px;
+text-align: center;
+}
+
+.Book img {
+width: 200px;
+height: 250px;
+object-fit: cover;
+border-radius: 4px;
+margin-bottom: 10px;
+transition: 1s;
+}
+
+.Book h3 {
+font-size: 18px;
+margin-bottom: 8px;
+}
+
+.Book p {
+font-size: 14px;
+margin-bottom: 7px;
+}
+
+.Book button {
+padding: 8px 16px;
+border-radius: 4px;
+background-color: #333;
+color: #fff;
+border: none;
+cursor: pointer;
+transition: 0.6s;
+}
+
+.Book img:hover {
+transform: scale(1.1); 
+}
+
+.Book img:active {
+transform: scale(1.2); 
+}
+
+.Book button:hover {
+transform: scale(1.1); 
+}
+
+.Book button:active {
+transform: scale(1.2); 
+}
+
+
